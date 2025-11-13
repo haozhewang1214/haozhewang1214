@@ -2,25 +2,27 @@
 # Basic Site Settings
 # -----------------------------------------------------------------------------
 
-title: Haozhe Wang - Portfolio
-first_name: Haozhe
-last_name: Wang
-contact_note: >
-  Email: haozhewang1214@gmail.com  
-  Tel: (+49) 152 / 3168 4183  
+title: "Haozhe Wang - Portfolio"
+first_name: "Haozhe"
+last_name: "Wang"
+
+contact_note: |
+  Email: haozhewang1214@gmail.com
+  Tel: (+49) 152 / 3168 4183
   Addr: Gottesauer Str. 37, 76131 Karlsruhe, Germany
 
-description: >
-  Technologie & Management im Baubetrieb, Karlsruhe Institute of Technology  
+description: |
+  Technologie & Management im Baubetrieb, Karlsruhe Institute of Technology
   Bachelor of Architecture, South China University of Technology
 
-keywords: portfolio, architecture, BIM, digital-construction
-lang: en
+keywords: ["portfolio", "architecture", "BIM", "digital-construction"]
+lang: "en"
 
-url: https://haozhewang1214.github.io
-baseurl: ""  
+url: "https://haozhewang1214.github.io"
+baseurl: ""
 
 icon: "📐"
+
 back_to_top: true
 navbar_fixed: true
 footer_fixed: true
@@ -29,25 +31,28 @@ footer_fixed: true
 # Theme Settings
 # -----------------------------------------------------------------------------
 
-max_width: 1120px
+max_width: "1120px"
+
 enable_darkmode: true
 enable_medium_zoom: true
 enable_masonry: true
 enable_math: false
 enable_navbar_social: false
+enable_project_categories: true
 
-repo_theme_light: default
-repo_theme_dark: dark
+repo_theme_light: "default"
+repo_theme_dark: "dark"
+
 repo_trophies:
   enabled: false
 
 # -----------------------------------------------------------------------------
-# Blog (you can keep but you don’t need to use it)
+# Blog Settings
 # -----------------------------------------------------------------------------
 
-blog_name: Haozhe Blog
-blog_description: Personal notes and projects
-permalink: /blog/:year/:title/
+blog_name: "Haozhe Blog"
+blog_description: "Personal notes and projects"
+permalink: "/blog/:year/:title/"
 
 pagination:
   enabled: true
@@ -58,19 +63,19 @@ related_blog_posts:
 giscus:
   repo:
   repo_id:
-  category: Comments
+  category: "Comments"
   category_id:
-  mapping: title
+  mapping: "title"
   strict: 1
   reactions_enabled: 1
-  input_position: bottom
-  dark_theme: dark
-  light_theme: light
+  input_position: "bottom"
+  dark_theme: "dark"
+  light_theme: "light"
   emit_metadata: 0
-  lang: en
+  lang: "en"
 
 # -----------------------------------------------------------------------------
-# Collections (Projects Enabled)
+# Collections
 # -----------------------------------------------------------------------------
 
 collections:
@@ -82,24 +87,29 @@ collections:
     output: false
 
 # -----------------------------------------------------------------------------
-# Markdown & Includes
+# Markdown Engine
 # -----------------------------------------------------------------------------
 
 markdown: kramdown
 highlighter: rouge
 
-include: ["_pages"]
+kramdown:
+  input: GFM
+
+include:
+  - "_pages"
+
 exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - vendor
-  - Dockerfile
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "vendor"
+  - "Dockerfile"
 
 keep_files:
-  - CNAME
-  - .nojekyll
+  - "CNAME"
+  - ".nojekyll"
 
 # -----------------------------------------------------------------------------
 # Plugins
@@ -113,7 +123,7 @@ plugins:
   - jemoji
 
 # -----------------------------------------------------------------------------
-# Jekyll Sitemap Default
+# Sitemap Defaults
 # -----------------------------------------------------------------------------
 
 defaults:
@@ -123,14 +133,21 @@ defaults:
       sitemap: false
 
 # -----------------------------------------------------------------------------
-# Image Optimization (keep)
+# Image Optimization
 # -----------------------------------------------------------------------------
 
 imagemagick:
   enabled: true
-  widths: [480, 800, 1400]
-  input_directories: ["assets/img/"]
-  input_formats: [".jpg", ".jpeg", ".png"]
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - "assets/img/"
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
   output_formats:
     webp: "-quality 85"
 
