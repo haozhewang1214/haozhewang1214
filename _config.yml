@@ -156,3 +156,13 @@ imagemagick:
     webp: "-quality 85"
 
 lazy_loading_images: true
+third_party_libraries:
+  download: false
+  bootstrap-table:
+    url:
+      css: ""
+      js: ""
+    integrity:
+      css: ""
+      js: ""
+    version: ""
