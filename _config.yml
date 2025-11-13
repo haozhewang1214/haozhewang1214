@@ -15,7 +15,11 @@ description: |
   Technologie & Management im Baubetrieb, Karlsruhe Institute of Technology
   Bachelor of Architecture, South China University of Technology
 
-keywords: ["portfolio", "architecture", "BIM", "digital-construction"]
+keywords:
+  - portfolio
+  - architecture
+  - BIM
+  - digital-construction
 lang: "en"
 
 url: "https://haozhewang1214.github.io"
