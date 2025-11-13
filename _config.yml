@@ -168,4 +168,13 @@ lazy_loading_images: true
 # -----------------------------------------------------------------------------
 
 third_party_libraries:
-  libraries: {}
+  highlightjs:
+    url:
+      css: ""
+      js: ""
+  mathjax:
+    url:
+      js: ""
+  mermaid:
+    url:
+      js: ""
