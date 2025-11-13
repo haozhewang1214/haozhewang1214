@@ -15,14 +15,17 @@ description: |
   Technologie & Management im Baubetrieb, Karlsruhe Institute of Technology
   Bachelor of Architecture, South China University of Technology
 
-keywords: ["portfolio", "architecture", "BIM", "digital-construction"]
-lang: "en"
+keywords:
+  - portfolio
+  - architecture
+  - BIM
+  - digital-construction
 
+lang: "en"
 url: "https://haozhewang1214.github.io"
 baseurl: ""
 
 icon: "📐"
-
 back_to_top: true
 navbar_fixed: true
 footer_fixed: true
@@ -59,7 +62,6 @@ pagination:
 related_blog_posts:
   enabled: false
 
-# Disable comments by default (avoid CI errors)
 giscus:
   repo:
   repo_id:
@@ -81,8 +83,6 @@ giscus:
 collections:
   projects:
     output: true
-
-  # Disabled unused types for stability
   news:
     output: false
   books:
@@ -118,7 +118,7 @@ keep_files:
   - ".nojekyll"
 
 # -----------------------------------------------------------------------------
-# Plugins (Safe Set — No Scholar, No Citation Errors)
+# Plugins
 # -----------------------------------------------------------------------------
 
 plugins:
@@ -144,4 +144,17 @@ defaults:
 
 imagemagick:
   enabled: true
-  widths: [480, 
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - "assets/img/"
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+  output_formats:
+    webp: "-quality 85"
+
+lazy_loading_images: true
