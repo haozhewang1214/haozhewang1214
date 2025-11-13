@@ -158,3 +158,6 @@ imagemagick:
     webp: "-quality 85"
 
 lazy_loading_images: true
+
+third_party_libraries:
+  enabled: false
